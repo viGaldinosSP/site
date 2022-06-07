@@ -58,3 +58,81 @@ box-shadow: 2px 2px 5px 2px rgb(142, 16, 17);
     font-size: 60px;
     text-shadow: 5px 5px black;
 }
+/* HISTORIA */
+.historia{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.hist_titulo {
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    font-family: 'Public Sans', sans-serif;
+}
+.aa{
+    display: flex;
+    flex-direction: row;
+}
+.card1 {
+height: 500px;
+width: 300px;
+background-color: white;
+margin-left: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid rgb(142, 16, 17);
+border-radius: 10px;
+flex-direction: column;
+font-family: 'Public Sans', sans-serif;
+}
+.card2 {
+height: 500px;
+width: 300px;
+background-color: white;
+margin-left: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid rgb(142, 16, 17);
+border-radius: 10px;
+flex-direction: column;
+font-family: 'Public Sans', sans-serif;
+
+}
+.card3 {
+height: 500px;
+width: 300px;
+background-color: white;
+margin-left: 20px;
+display: flex;
+justify-content: center;
+border: 2px solid rgb(142, 16, 17);
+border-radius: 10px;
+flex-direction: column;
+align-items: center;
+font-family: 'Public Sans', sans-serif;
+}
+.cont1{
+    /* height: 400px;
+    width: 300px;
+    /* background-image: url(images/black.jpg); */
+    /* background-color: black; */
+}
+.cont1 img {
+    /* height: 350px; */
+    width: 300px;
+}
+.cont2 img {
+    /* height: 350px; */
+    width: 300px;
+}
+.cont3 img {
+    /* height: 350px; */
+    width: 300px;
+}

@@ -65,15 +65,15 @@ background-color: rgb(0, 0, 0);
     border-radius: 32px;
     margin-left: 5px;
     margin-top: 5px;
-    margin-bottom: -320px;
+    margin-bottom: -650px;
 }
 .gang3 {
     width: 500px;
     height: 400px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 32px;
-    margin-top: 5px;
-    margin-left: 600px;
+    margin-top: 9px;
+    margin-left: 830px;
     margin-bottom: 10px;
 }
 .gang4 {
@@ -81,7 +81,7 @@ background-color: rgb(0, 0, 0);
     height: 400px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 32px;
-    margin-top: 5px;
-    margin-left: 600px;
+    margin-top: -5px;
+    margin-left: 830px;
     margin-bottom: 10px;
 }
