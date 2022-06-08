@@ -41,49 +41,22 @@ box-shadow: 2px 2px 5px 2px rgb(142, 16, 17);
     text-decoration:none ;
     color: white;
 }
-/* HISTÓRIA */
+/* ANIME */
 .page {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/hist.jpg);
-    background-size: 100%;
+    /* height: 100vh; */
+    background-color: black;
+    border: 10px solid rgb(142, 16, 17);
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* filter: blur(5px); */
+    color: white;
+    font-size: 50px;
+    flex-direction: column;
+    text-align: center;
 }
-.slogan {
-    
-    background-color: rgba(255, 255, 255,0.6);
-    border: 4px solid black;
-    border-radius: 30px;
-    width: 98%;
-    height: 98%;
-    color: black;
-    font-size: 60px;
-    justify-content: left;
-    align-items: center;
-    position: absolute;
-    /* text-shadow: 5px 5px black; */
+.hist{
+    font-size: 30px;
 }
-.pers1{
-
-}
-.pers1{
-    
-}
-.pers1{
-    
-}
-.pers1{
-    
-}
-.pers1{
-    
-}
-.pers1{
-    
-}
-.pers1{
-    
+.hist img {
+    border: 4px solid rgb(142, 16, 17);
+    width: 800px;
 }
