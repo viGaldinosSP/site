@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="cssCadastro.css">
+    <script src="jsCadastro.js"></script>
+    <link rel="stylesheet" href="css/cssCadastro.css">
+    <script src="js/jsCadastro.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,15 +28,17 @@
     <div class="page">
         <div class="banner">
                 <div class="formulario">
-                <h1>Login</h1>
+                <h1>Cadastro</h1>
+                <h3>Usuario</h3>
+                <input id="usuario" type="text">
                 <h3>E-mail</h3>
                 <input id="email" type="text">
                 <h3>Senha</h3>
                 <input id="senha" type="password">
-                <br><br>    
-                <a href="">cadastrar-se</a>
+                <h3>Confirmar Senha</h3>
+                <input id="confsenha" type="password">
                 <br><br>
-                <button onclick="">Entrar</button>
+                <button class="btn" onclick="cadastrar()">Cadastrar</button>
             </div>
         </div>
 

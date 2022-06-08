@@ -41,7 +41,7 @@ box-shadow: 2px 2px 5px 2px rgb(142, 16, 17);
     text-decoration:none ;
     color: white;
 }
-/* LOGIN */
+/* CADASTRO */
 .page {
     height: 81vh;
     background-image: url(images/backlogin.jpg);
@@ -51,7 +51,7 @@ box-shadow: 2px 2px 5px 2px rgb(142, 16, 17);
 }
 .banner {
     width: 300px;
-    height: 350px;
+    height: 520px;
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid rgb(142, 16, 17);
     border-radius: 64px;
