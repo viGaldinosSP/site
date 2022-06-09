@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+}
+.pai {
+    display: flex;
+    flex-direction: row;
+}
+.index {
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    border-right: 3px solid rgb(142, 16, 17);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Public Sans', sans-serif;
+    flex-direction: column;
+}
+.index h2 {
+    margin-top: -120px;
+    color: white;
+}
+.index h3 {
+    /* width: 2%px; */
+    color: white;
+    font-size: 20px;
+    /* border: 1px solid rgb(142, 16, 17); */
+    /* border-radius: 16px; */
+    /* padding: 3px -6px; */
+}
+.inicio {
+    width: 80%;
+    margin-top: 80px;
+    background-color: rgb(142, 16, 17);
+    border: 1px solid white;
+    border-radius: 32px;
+}
+.teste {
+    width: 80%;
+    margin-top: 15px;
+    background-color: rgb(142, 16, 17);
+    border: 1px solid white;
+    border-radius: 32px;
+}
+.manga {
+    width: 80%;
+    margin-top: 15px;
+    background-color: rgb(142, 16, 17);
+    border: 1px solid white;
+    border-radius: 32px;
+}
+/* QUIZZ */
+.page {
+    /* background-color: rgb(17, 17, 17); */
+    background-image: url(css/images/backquiz.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(142, 16, 17);
+}
+
+#first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#first h1 {
+    margin-left: 60px;
+    margin-top: -20px;
+    font-size: 80px;
+    text-shadow: 2px 2px rgb(142, 16, 17);
+}
+#first button {
+    margin-left: 60px;
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 16px;
+    border: 1px solid rgb(142, 16, 17);
+}
+.ana {
+    margin-top: -600px;
+    text-shadow: 2px 2px rgb(142, 16, 17);
+    font-size: 30px;
+}
+#quest1 {
+    margin-left: -140px;
+    display: none;
+    color: black;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    border: 2px solid rgb(142, 16, 17);
+    border-radius: 32px;
+    text-align: center;
+    margin-top: 30px;
+}
+#quest2 {
+    margin-left: -140px;
+    display: none;
+    color: black;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    border: 2px solid rgb(142, 16, 17);
+    border-radius: 32px;
+    text-align: center;
+    margin-top: 30px;
+}
+#quest3 {
+    margin-left: -140px;
+    display: none;
+    color: black;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    border: 2px solid rgb(142, 16, 17);
+    border-radius: 32px;
+    text-align: center;
+    margin-top: 30px;
+}
+#quest4 {
+    margin-left: -140px;
+    display: none;
+    color: black;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    border: 2px solid rgb(142, 16, 17);
+    border-radius: 32px;
+    text-align: center;
+    margin-top: 30px;
+}
+#quest5 {
+    margin-left: -140px;
+    display: none;
+    color: black;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    border: 2px solid rgb(142, 16, 17);
+    border-radius: 32px;
+    text-align: center;
+    margin-top: 30px;
+}
+#results{
+    height: 80%;
+    width: 70%;
+    background-color: white;
+    border-radius: 32px;
+    border: 2px solid rgb(142, 16, 17);
+    margin-left: -140px;
+    display: none;
+    text-align: center;
+    color: black;
+}
+#results button{
+    /* margin-left: 60px; */
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 16px;
+    border: 1px solid rgb(142, 16, 17);
+
+}
+#img {
+    border: 2px solid rgb(142, 16, 17);
+    width: 200px;
+}
+a{
+    text-decoration: none;
+}

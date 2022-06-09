@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cssQuiz.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pai">
+    <div class="index">
+        <h2>Índice</h2>
+        <a href="dashboard.html"><div class="inicio">
+                <h3>Início
+                    </h3></a>
+
+        </div>
+        <a href="#"><div class="teste" style="background-color: white; border: 1px solid rgb(142, 16, 17);">
+            <h3 style="color: rgb(142, 16, 17);">Teste 
+                </h3></a>
+
+    </div>
+    <a href="manga.html"><div class="manga">
+        <h3>Sobre o Mangá
+            </h3></a>
+
+</div>
+    </div>
+    <div class="page">
+        <div id="first">
+            <h1>Tokyo Revengers</h1>
+            <h1>Quiz</h1>
+            <button onclick="start()">Testar suas abilidades</button>
+        </div>
+        <div class="ana">
+        Ultimos resultados: <span id="ult"></span>
+        </div>
+        <div id="quest1">
+        
+            <h3>Questão 1</h3>
+            No aniversário de 14 anos do Mickey, Baji e kazutora resolvem fazer uma surpresa para ele, eles tentaram roubar uma moto para dar de presente para o Mickey, mas acabaram matando o seu irmão por engano, qual era o nome do irmão do Mickey? 
+            <br><br>
+            <select name="questão1" id="q1">
+                <option value="5">--Selecione--</option>
+                <option value="1">Shinichiro Sano</option>
+                <option value="0">Ken Ryuguji</option>
+                <option value="0">Keisuke Sano</option>
+        </select>
+        <br><br>
+        <button onclick="prox1()">Proximo --></button>
+        </div>
+        <div id="quest2">
+            <h3>Questão 2</h3>
+            A Toman é dividida em 5 divisões, cada uma tem um capitão que é responsável pela divisão, qual o nome do capitão da segunda divisão?
+            <br><br>
+            <select name="questão2" id="q2">
+                <option value="5">--Selecione--</option>
+                <option value="0">Baji</option>
+                <option value="1">Mitsuya</option>
+                <option value="0">Takemichi</option>
+            </select>
+            <br><br>
+            <button onclick="volta2()"><-- Voltar</button>
+            <button onclick="prox2()">Proximo --></button>
+        </div>
+        <div id="quest3">
+            <h3>Questão 3</h3>
+            Em Tokyo Revengers ocorrem varias batalhas de gangues, o confronto que ocorreu no dia 31 de outubro entre a Toman e a Mobius ficou conhecido como?
+            <br><br>
+            <select name="questão3" id="q3">
+                <option value="5">--Selecione--</option>
+                <option value="0">Haloween Sanguinário</option>
+                <option value="0">Haloween Mortifero</option>
+                <option value="1">Haloween Sangrento</option>
+            </select>
+            <br><br>
+            <button onclick="volta3()"><-- Voltar</button>
+            <button onclick="prox3()">Proximo --></button>
+        </div>
+        <div id="quest4">
+            <h3>Questão 4</h3>
+            No começo da história, existia um clube de luta liderado pelo Kiyomizu, onde eram postos alunos de anos inferiores para lutar entre si enuqanto os veteranos apostavam, em um certo dia Takmichi desafia o lider deste clube para defender seu amigo que não era bom de briga, qual o nome desse amigo?
+            <br><br>
+            <select name="questão4" id="q4">
+                <option value="5">--Selecione--</option>
+                <option value="1">Takuya Yamamoto</option>
+                <option value="0">Makoto Suzuki</option>
+                <option value="0">Kazuchi Yamagishi</option>
+            </select>
+            <br><br>
+            <button onclick="volta4()"><-- Voltar</button>
+            <button onclick="prox4()">Proximo --></button>
+        </div>
+        <div id="quest5">
+        <h3>Questão 5</h3>
+        Logo no primeiro episódio, vemos o Takemichi assintindo TV e vendo assistindo a noticia onde duas pessoas tinham morrido em um confronto de gangues, entre elas estavam Hinata Tachibana e Naoto Tachibana, em qual dia ocorreu essa notícia?
+        <br><br>
+        <select name="questão5" id="q5">
+            <option value="5">--Selecione--</option>
+            <option value="0">01/06/2017</option>
+            <option value="1">01/07/2017</option>
+            <option value="0">01/04/2017</option>
+        </select>
+        <br><br>
+        <button onclick="volta5()"><-- Voltar</button>
+        <button onclick="final()">Finalizar</button>
+        </div>
+        <div id="results">
+            <h1>Seu resultado foi de...</h1>
+            <div id="div_msg"></div>
+            <h2>Você acertou <span id="qtd"></span> questões <span id="feed"></span></h2>
+            <br><br>
+            <img id="img" src="" alt="">
+            <br><br>
+            <button onclick="tentar()">Tentar de novo</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+<script>
+
+    var vt_resultado = [];
+    function start(params) {
+        quest1.style.display = `block`;
+        first.style.display = `none`;
+    }
+    function prox1(params) {
+        if (q1.value == 5) {
+            alert('Selecione uma resposta')
+        }else {
+            quest1.style.display = `none`;
+            quest2.style.display = `block`;
+        }
+        
+    }
+    function prox2(params) {
+        if (q2.value == 5) {
+            alert('Selecione uma resposta')
+        }else {
+        quest2.style.display = `none`;
+        quest3.style.display = `block`;
+        }
+    }
+    function volta2(params) {
+            quest1.style.display = `block`;
+            quest2.style.display = `none`;
+        
+    }
+    function prox3(params) {
+        if (q3.value == 5) {
+            alert('Selecione uma resposta')
+        }else {
+        quest3.style.display = `none`;
+        quest4.style.display = `block`;
+        }
+    }
+    function volta3(params) {
+ 
+ quest2.style.display = `block`;
+ quest3.style.display = `none`;
+
+
+}
+    function prox4(params) {
+        if (q4.value == 5) {
+            alert('Selecione uma resposta')
+        } else {
+        quest4.style.display = `none`;
+        quest5.style.display = `block`;
+        }
+    }
+    function volta4(params) {
+ 
+ quest3.style.display = `block`;
+ quest4.style.display = `none`;
+
+
+}
+    
+    
+    function final(params) {
+        if (q5.value == 5) {
+            alert('Selecione uma resposta')
+        } else {
+            quest5.style.display = `none`;
+            results.style.display = `block`;
+            var x = 0;
+            x = x + Number(q1.value) + Number(q2.value) + Number(q3.value) + Number(q4.value) + Number(q5.value);
+            vt_resultado.push(x)
+            }
+
+            for (let i = 0; i < vt_resultado[vt_resultado.length - 1]; i++) {
+                div_msg.innerHTML += ` ${i + 1}`;
+                qtd.innerHTML = vt_resultado[vt_resultado.length - 1]
+                if (vt_resultado[vt_resultado.length - 1] <= 2) {
+                    feed.innerHTML =`Vai assistir de novo pouque você não prestou atenção!!`
+                    img.src = `images/bad.gif`
+                } else if (vt_resultado[vt_resultado.length - 1] == 3) {
+                    feed.innerHTML =`É ta mais ou menos`
+                    img.src = `images/me.gif`
+                } else {
+                    feed.innerHTML =`É você realmente é um fã, parabéns !!!`
+                    img.src = `images/good.gif`
+                }
+                
+                // setTimeout(() => {
+                    
+                // if (i ==  vt_resultado[vt_resultado.length - 1]) {
+                //     div_msg
+                // }
+                    
+                // }, timeout);
+
+                
+            }
+            ult.innerHTML += ` ${vt_resultado[vt_resultado.length - 1]}`
+        }
+    
+    function volta5(params) {
+ 
+ quest4.style.display = `block`;
+ quest5.style.display = `none`;
+
+
+}
+function tentar(params) {
+    div_msg.innerHTML = '' 
+    results.style.display = `none`;
+    first.style.display = `flex`;
+    q1.value = 5;
+    q2.value = 5;
+    q3.value = 5;
+    q4.value = 5;
+    q5.value = 5;
+}
+</script>
